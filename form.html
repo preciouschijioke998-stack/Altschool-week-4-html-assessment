@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to AltSchool</title>
+  </head>
+  <body>
+    <header id="top">
+      <nav aria-label="Main navigation">
+        <a href="index.html" title="Profile page">Home</a>&nbsp;&nbsp;
+        <a href="form.html" title="Application form">Apply to AltSchool</a>
+      </nav>
+      <hr>
+      <h1><big><strong>Apply to AltSchool</strong></big></h1>
+      <p><em>Create your account · School of Engineering · Karatu 2026</em></p>
+      <nav aria-label="Form sections">
+        <a href="#personal" title="Personal information">Personal</a>&nbsp;&nbsp;
+        <a href="#account" title="Account details">Account</a>&nbsp;&nbsp;
+        <a href="#program" title="Program selection">Program</a>&nbsp;&nbsp;
+        <a href="#additional" title="Additional information">Additional</a>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <form action="#" method="post" aria-label="AltSchool application form">
+
+        <section id="personal">
+          <h2><strong>Personal Information</strong></h2>
+          <fieldset>
+            <legend><strong>Your Details</strong></legend>
+
+            <p>
+              <label for="firstName">First Name</label><br>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            </p>
+
+            <p>
+              <label for="lastName">Last Name</label><br>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </p>
+
+            <p>
+              <label for="email">Email Address</label><br>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </p>
+
+            <p>
+              <label for="phone">Phone Number</label><br>
+              <input type="tel" id="phone" name="phone" placeholder="+234 900 000 0000" required>
+            </p>
+
+            <p>
+              <label for="dob">Date of Birth</label><br>
+              <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <p>
+              <label for="country">Country</label><br>
+              <select id="country" name="country" required>
+                <option value="">-- Select your country --</option>
+                <option value="NG">Nigeria</option>
+                <option value="GH">Ghana</option>
+                <option value="KE">Kenya</option>
+                <option value="ZA">South Africa</option>
+                <option value="OT">Other</option>
+              </select>
+            </p>
+          </fieldset>
+        </section>
+
+        <hr>
+
+        <section id="account">
+          <h2><strong>Account Details</strong></h2>
+          <fieldset>
+            <legend><strong>Login Credentials</strong></legend>
+
+            <p>
+              <label for="password">Password</label><br>
+              <input type="password" id="password" name="password" placeholder="Create a password" minlength="8" required>
+              <br><small>Minimum of 8 characters.</small>
+            </p>
+
+            <p>
+              <label for="confirmPassword">Confirm Password</label><br>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" minlength="8" required>
+            </p>
+          </fieldset>
+        </section>
+
+        <hr>
+
+        <section id="program">
+          <h2><strong>Program Selection</strong></h2>
+          <fieldset>
+            <legend><strong>Choose Your Path</strong></legend>
+
+            <p>
+              <label for="school">School of Study</label><br>
+              <select id="school" name="school" required>
+                <option value="">-- Select a school --</option>
+                <option value="engineering">School of Engineering</option>
+                <option value="data">School of Data</option>
+                <option value="product">School of Product</option>
+                <option value="business">School of Business</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="track">Specialization Track</label><br>
+              <select id="track" name="track" required>
+                <option value="">-- Select a track --</option>
+                <option value="frontend">Frontend Engineering</option>
+                <option value="backend">Backend Engineering</option>
+                <option value="cloud">Cloud Engineering</option>
+                <option value="ai-fullstack">AI Powered Fullstack Engineering</option>
+                <option value="cybersecurity">Cybersecurity</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="cohort">Preferred Cohort</label><br>
+              <select id="cohort" name="cohort" required>
+                <option value="">-- Select a cohort --</option>
+                <option value="karatu-2026">Karatu 2026</option>
+                <option value="next">Next Available Cohort</option>
+              </select>
+            </p>
+
+            <fieldset>
+              <legend>How did you hear about AltSchool?</legend>
+              <p>
+                <input type="radio" id="social" name="referral" value="social">
+                <label for="social">Social Media</label><br>
+
+                <input type="radio" id="friend" name="referral" value="friend">
+                <label for="friend">Friend or Colleague</label><br>
+
+                <input type="radio" id="search" name="referral" value="search">
+                <label for="search">Search Engine</label><br>
+
+                <input type="radio" id="other" name="referral" value="other">
+                <label for="other">Other</label>
+              </p>
+            </fieldset>
+          </fieldset>
+        </section>
+
+        <hr>
+
+        <section id="additional">
+          <h2><strong>Additional Information</strong></h2>
+          <fieldset>
+            <legend><strong>Final Details</strong></legend>
+
+            <p>
+              <label for="motivation">Why do you want to join AltSchool?</label><br>
+              <textarea id="motivation" name="motivation" rows="5" cols="40" placeholder="Tell us briefly why you are applying..." required></textarea>
+            </p>
+
+            <p>
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">
+                I agree to the <a href="#" title="Read the terms and conditions">Terms and Conditions</a>
+                and <a href="#" title="Read the privacy policy">Privacy Policy</a>.
+              </label>
+            </p>
+          </fieldset>
+        </section>
+
+        <hr>
+
+        <p>
+          <button type="submit" title="Submit application">Submit Application</button>&nbsp;&nbsp;
+          <button type="reset" title="Clear form">Reset</button>
+        </p>
+      </form>
+    </main>
+
+    <hr>
+
+    <footer>
+      <p>
+        <a href="#top" title="Return to top of page">Back to top</a>
+      </p>
+      <address>
+        Precious C Chijioke<br>
+        Abuja, Nigeria<br>
+        <a href="preciouschijioke998@gmail.com" title="Send me an email">preciouschijioke998@gmail.com</a>
+      </address>
+      <p><small>&copy; 2026 Precious C Chijioke. All rights reserved.</small></p>
+    </footer>
+  </body>
+</html>
